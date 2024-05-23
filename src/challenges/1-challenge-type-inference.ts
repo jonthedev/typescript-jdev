@@ -2,7 +2,7 @@
 
 * Create a variable of type string and try to invoke a string method on it.
 
-*Create a variable of type number and try to perform a mathematical operation on it.
+* Create a variable of type number and try to perform a mathematical operation on it.
 
 * Create a variable of type boolean and try to perform a logical operation on it.
 
