@@ -20,3 +20,20 @@ amount = 12 - 1
 let isAwesome: boolean = true
 isAwesome = false
 // isAwesome = 'shakeAndBake';
+
+// ? Practical Application of Type Annotation
+
+const books = ["1984", "Brave New World", "Fahrenheit 451"]
+
+let foundBook: string | undefined
+
+for (let book of books) {
+  console.log("loop running")
+  if (book === "1984") {
+    foundBook = book
+    foundBook = foundBook.toUpperCase()
+    break
+  }
+}
+
+console.log(foundBook?.length)
