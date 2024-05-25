@@ -1,4 +1,10 @@
-interface BookWithMethods {
+/*
+
+? Interface - Methods
+
+*/
+
+interface Book2 {
   readonly isbn: number
   title: string
   author: string
@@ -8,7 +14,7 @@ interface BookWithMethods {
   printTitle(message: string): string
 }
 
-const deepWork2: BookWithMethods = {
+const deepWork2: Book2 = {
   isbn: 9781455586691,
   title: "Deep Work",
   author: "Cal Newport",
