@@ -46,6 +46,4 @@ const newStudent = {
 createStudent(newStudent); // * valid
 createStudent({ id: 1, name: 'bob', email: 'bob@gmail.com' }); // ! invalid
 
-
-
 */
