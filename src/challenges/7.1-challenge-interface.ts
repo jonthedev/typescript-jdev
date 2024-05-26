@@ -28,6 +28,9 @@ interface Manager1 extends Person {
   delegateTasks: () => void
 }
 
+// Create a variable called employee and log it to the console
+const employee1: Person | DogOwner | Manager = getEmployee()
+
 // Define the getEmployee function
 function getEmployee(): Person | DogOwner | Manager1 {
   const random = Math.random()
@@ -45,6 +48,20 @@ function getEmployee(): Person | DogOwner | Manager1 {
   }
 }
 
-// Create a variable called employee and log it to the console
-const employee1: Person | DogOwner | Manager = getEmployee()
-console.log(employee)
+console.log(employee1)
+
+/*
+
+* A type predicate in TypeScript is a special kind of return type for a function that not only returns a boolean, but also asserts that the argument is of a specific type if the function returns true. It's typically used in user-defined type guard functions to narrow down the type of a variable within a certain scope. The syntax is arg is Type, where arg is the function argument and Type is the type you're checking for.
+
+*/
+
+function isManager(obj: Person | DogOwner | Manager1): obj is Manager1 {
+  return "managePeople" in obj
+}
+
+if (isManager(employee1)) {
+  employee1.delegateTasks()
+}
+
+console.log(isManager(employee1))
