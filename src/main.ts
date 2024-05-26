@@ -2,7 +2,7 @@ import "./style.css"
 import typescriptLogo from "./typescript.svg"
 import viteLogo from "/vite.svg"
 import { setupCounter } from "./counter.ts"
-import "./challenges/7-challenge-interface.ts"
+import "./lesson/12-enums.ts"
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
