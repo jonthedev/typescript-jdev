@@ -4,7 +4,7 @@
 
 */
 
-interface Book2 {
+interface Book {
   readonly isbn: number
   title: string
   author: string
@@ -14,7 +14,7 @@ interface Book2 {
   printTitle(message: string): string
 }
 
-const deepWork2: Book2 = {
+const deepWork: Book = {
   isbn: 9781455586691,
   title: "Deep Work",
   author: "Cal Newport",
@@ -26,6 +26,6 @@ const deepWork2: Book2 = {
     return `${this.title} ${message}`
   }
 }
-deepWork2.printAuthor()
-const result1 = deepWork2.printTitle("is an awesome book")
+deepWork.printAuthor()
+const result = deepWork.printTitle("is an awesome book")
 console.log(result)

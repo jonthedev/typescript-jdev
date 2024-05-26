@@ -39,7 +39,7 @@ enum Status {
   Declined = "declined"
 }
 
-type User2 = {
+type User = {
   name: string
   status: Status
 }
@@ -47,4 +47,4 @@ type User2 = {
 // retrieve string from the DB
 const statusValue = "pending"
 
-const user2: User2 = { name: "jon", status: statusValue as Status }
+const user2: User = { name: "jon", status: statusValue as Status }

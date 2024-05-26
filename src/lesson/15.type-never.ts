@@ -8,7 +8,7 @@
 
 // let someValue: never = 0;
 
-type Theme2 = "light" | "dark"
+type Theme = "light" | "dark"
 
 function checkTheme(theme: Theme) {
   if (theme === "light") {

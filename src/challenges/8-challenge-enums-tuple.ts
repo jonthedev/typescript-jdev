@@ -16,19 +16,19 @@ enum UserRole {
   Employee
 }
 
-type User1 = {
+type User = {
   id: number
   name: string
   role: UserRole
   contact: [string, string] // [email, phone]
 }
 
-function createUser(user: User1): User1 {
+function createUser(user: User): User {
   return user
 }
 
 // Call the createUser function
-const user: User1 = createUser({
+const user: User = createUser({
   id: 1,
   name: "John Doe",
   role: UserRole.Admin,

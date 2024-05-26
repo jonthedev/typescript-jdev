@@ -23,16 +23,16 @@ interface DogOwner extends Person {
 }
 
 // Define the Manager interface
-interface Manager1 extends Person {
+interface Manager extends Person {
   managePeople: () => void
   delegateTasks: () => void
 }
 
 // Create a variable called employee and log it to the console
-const employee1: Person | DogOwner | Manager = getEmployee()
+const employee: Person | DogOwner | Manager = getEmployee()
 
 // Define the getEmployee function
-function getEmployee(): Person | DogOwner | Manager1 {
+function getEmployee(): Person | DogOwner | Manager {
   const random = Math.random()
 
   if (random < 0.33) {
@@ -44,11 +44,11 @@ function getEmployee(): Person | DogOwner | Manager1 {
       name: "Bob",
       managePeople: () => console.log("Managing people..."),
       delegateTasks: () => console.log("Delegating tasks...")
-    } as Manager1
+    } as Manager
   }
 }
 
-console.log(employee1)
+console.log(employee)
 
 /*
 
@@ -56,12 +56,12 @@ console.log(employee1)
 
 */
 
-function isManager(obj: Person | DogOwner | Manager1): obj is Manager1 {
+function isManager(obj: Person | DogOwner | Manager): obj is Manager {
   return "managePeople" in obj
 }
 
-if (isManager(employee1)) {
-  employee1.delegateTasks()
+if (isManager(employee)) {
+  employee.delegateTasks()
 }
 
-console.log(isManager(employee1))
+console.log(isManager(employee))

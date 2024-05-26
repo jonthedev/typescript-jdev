@@ -18,20 +18,20 @@ type Book = {
 
 type DiscountedBook = Book & { discount: number }
 
-const book1: Book = {
-  id: 2,
+const book: Book = {
+  id: 1,
   name: "How to Cook a Dragon",
   price: 15
 }
 
 const book2: Book = {
-  id: 3,
+  id: 2,
   name: "The Secret Life of Unicorns",
   price: 18
 }
 
 const discountedBook: DiscountedBook = {
-  id: 4,
+  id: 3,
   name: "Gnomes vs. Goblins: The Ultimate Guide",
   price: 25,
   discount: 0.15

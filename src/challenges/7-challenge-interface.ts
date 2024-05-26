@@ -24,7 +24,7 @@ interface Computer {
   upgradeRam: (ram: number) => number
 }
 
-const laptop2: Computer = {
+const laptop: Computer = {
   id: 1,
   brand: "random brand",
   ram: 8, // in GB
@@ -34,7 +34,7 @@ const laptop2: Computer = {
   }
 }
 
-laptop2.storage = 256 // assigning value to optional property
+laptop.storage = 256 // assigning value to optional property
 
-console.log(laptop2.upgradeRam(4)) // upgrades RAM by 4GB
-console.log(laptop2)
+console.log(laptop.upgradeRam(4)) // upgrades RAM by 4GB
+console.log(laptop)

@@ -32,11 +32,11 @@ const person: Person = {
 // Extending an interface in TypeScript is a way to create a new interface that inherits the properties and methods of an existing interface. You use the extends keyword to do this. When you extend an interface, the new interface will have all the members of the base interface, plus any new members that you add.
 
 // Extending the interface
-interface Employee1 extends Person {
+interface Employee extends Person {
   employeeId: number
 }
 
-const employee: Employee1 = {
+const employee: Employee = {
   name: "jane",
   age: 28,
   employeeId: 123,
@@ -46,11 +46,11 @@ const employee: Employee1 = {
 }
 
 // Interface multiple inheritance
-interface Manager1 extends Person, DogOwner {
+interface Manager extends Person, DogOwner {
   managePeople(): void
 }
 
-const manager: Manager1 = {
+const manager: Manager = {
   name: "Bob",
   age: 35,
   dogName: "Rex",

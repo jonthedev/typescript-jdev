@@ -10,9 +10,9 @@
 
 */
 
-let person1: [string, number] = ["jon", 25]
-console.log(person1[0]) // Outputs: john
-console.log(person1[1]) // Outputs: 25
+let person: [string, number] = ["jon", 25]
+console.log(person[0]) // Outputs: john
+console.log(person[1]) // Outputs: 25
 
 let jon: [string, number?] = ["jon"]
 

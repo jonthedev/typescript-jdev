@@ -6,7 +6,7 @@
 
 */
 
-interface Book3 {
+interface Book {
   readonly isbn: number
   title: string
   author: string
@@ -17,7 +17,7 @@ interface Book3 {
   printSomething: (someValue: number) => number
 }
 
-const deepWork3: Book3 = {
+const deepWork: Book = {
   isbn: 9781455586691,
   title: "Deep Work",
   author: "Cal Newport",
@@ -35,7 +35,7 @@ const deepWork3: Book3 = {
   // second option
   printSomething: someValue => {
     // "this" gotcha
-    console.log(deepWork3.author)
+    console.log(deepWork.author)
     return someValue
   }
   // third option
@@ -47,8 +47,8 @@ const deepWork3: Book3 = {
   //   console.log(deepWork.author);
   // },
 }
-console.log(deepWork3.printSomething(34))
+console.log(deepWork.printSomething(34))
 
-deepWork3.printAuthor()
+deepWork.printAuthor()
 // const result3 = deepWork3.printTitle("is an awesome book")
 // console.log(result3)

@@ -6,14 +6,14 @@
 
 */
 
-interface BookInterface {
+interface Book {
   readonly isbn: number
   title: string
   author: string
   genre?: string
 }
 
-const deepWork: BookInterface = {
+const deepWork: Book = {
   isbn: 9781455586691,
   title: "Deep Work",
   author: "Cal Newport",

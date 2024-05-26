@@ -6,21 +6,21 @@
 
 // * A type alias is a way to give a name to a type. It can represent primitive types, union types, intersection types, tuples, and any other types. Once defined, the alias can be used anywhere in place of the actual type.
 
-type HumanType = {
+type Person = {
   name: string
   age: number
 }
 
-let carl: HumanType = { name: "John", age: 30 }
+let john: Person = { name: "John", age: 30 }
 
 // * An interface is a way to define a contract for a certain structure of an object.
 
-interface HumanInterface {
+interface PersonInterface {
   name: string
   age: number
 }
 
-let bek: HumanInterface = { name: "John", age: 30 }
+let beck: Person = { name: "Beck", age: 30 }
 
 /*
 
@@ -49,10 +49,11 @@ let move: Direction = "up"
 */
 
 interface HumanInterface {
-  greet?(): void
+  name: string
+  greet(): void
 }
 
-class Employee1 implements HumanInterface {
+class Employee implements HumanInterface {
   name: string
 
   constructor(name: string) {
@@ -66,13 +67,13 @@ class Employee1 implements HumanInterface {
 
 // * * Type aliases can use computed properties, while interfaces cannot.
 
-let sarah = new Employee1("John")
+let sarah = new Employee("Sarah")
 sarah.greet() // Outputs: Hello, my name is John
 
-const propName1 = "age"
+const propName = "age"
 
 type Animal1 = {
   [propName]: number
 }
 
-let tiger1: Animal1 = { [propName]: 5 }
+let tiger: Animal1 = { [propName]: 5 }
