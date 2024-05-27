@@ -2,7 +2,7 @@ import "./style.css"
 import typescriptLogo from "./typescript.svg"
 import viteLogo from "/vite.svg"
 import { setupCounter } from "./counter.ts"
-import "./challenges/14-challenge-discriminated-unions.ts"
+import "./lesson/21-fetch-data-zod.ts"
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
