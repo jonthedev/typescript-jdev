@@ -1,5 +1,7 @@
 /*
 
+? This project's TypeScript configuration is defined in the tsconfig.json file. Here's a breakdown of the configuration options:
+
 * include: Set to ["src"]. This tells TypeScript to only convert files in the src directory.
 
 * target: Set to ES2020. This is the JavaScript version that the TypeScript code will be compiled to.
