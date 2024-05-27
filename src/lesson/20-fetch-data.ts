@@ -1,6 +1,16 @@
-const url = "https://www.course-api.com/react-tours-project"
+const url = "https://www.scourse-api.com/react-tours-project"
 
-async function fetchData(url: string) {
+// Define a type for the data you're fetching.
+type Tour = {
+  id: string
+  name: string
+  info: string
+  image: string
+  price: string
+  // Add more fields as necessary.
+}
+
+async function fetchData(url: string): Promise<Tour[]> {
   try {
     const response = await fetch(url)
 
@@ -9,21 +19,20 @@ async function fetchData(url: string) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }
 
-    const data = await response.json()
+    const data: Tour[] = await response.json()
+    console.log(data)
     return data
   } catch (error) {
     const errMsg =
       error instanceof Error ? error.message : "there was an error..."
     console.error(errMsg)
+
     // throw error;
     return []
   }
 }
 
 const tours = await fetchData(url)
-tours.map((tour: any) => {
+tours.map(tour => {
   console.log(tour.name)
 })
-
-// return empty array
-// throw error in catch block
