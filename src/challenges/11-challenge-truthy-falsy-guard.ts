@@ -2,7 +2,7 @@
 
 ? Truthy / Falsy Guard
 
-In TypeScript, "Truthy"/"Falsy" guard is a simple check for a truthy or falsy value
+* In TypeScript, "Truthy"/"Falsy" guard is a simple check for a truthy or falsy value
 
 * Define a function named printLength that takes one parameter str which can be of type string, null, or undefined.
 
