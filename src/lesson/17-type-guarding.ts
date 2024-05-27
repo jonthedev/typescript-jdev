@@ -1,6 +1,6 @@
 /*
 
-? Type Guarding
+? Type Guarding - typeof guard
 
 * Type guarding is a term in TypeScript that refers to the ability to narrow down the type of an object within a certain scope. This is usually done using conditional statements that check the type of an object.
 
