@@ -1,9 +1,13 @@
-function Component() {
-  return (
-    <div>
-      <h2>React & Typescript</h2>
-      <h2>Return Type</h2>
-    </div>
-  );
+/*
+
+* By default TypeScript infers JSX.Element.
+
+*/
+
+// * set function return type
+function Component(): JSX.Element | null | string {
+  return null
+  return "hello"
+  return <h2>hello from typescript</h2>
 }
-export default Component;
+export default Component
