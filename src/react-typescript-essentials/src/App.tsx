@@ -8,13 +8,12 @@
 
 */
 
-import Component from "./lessons/05-challenge"
+import Component from "./lessons/06-context"
 
 function App() {
   return (
     <main>
-      <Component type="basic" name="susan" />
-      <Component type="advanced" name="anna" email="anna@gmail.com" />
+      <Component />
     </main>
   )
 }
