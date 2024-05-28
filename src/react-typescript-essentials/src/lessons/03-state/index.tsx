@@ -36,7 +36,7 @@ function Component() {
   const [text, setText] = useState("shakeAndBake")
   const [number, setNumber] = useState(1)
   const [list, setList] = useState<string[]>([])
-  const [links, setLinks] = useState<Link[]>([])
+  const [links, setLinks] = useState<Link[]>(navLinks)
 
   return (
     <div>
