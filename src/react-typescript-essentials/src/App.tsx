@@ -1,11 +1,9 @@
-import Component from "./lessons/02-props/"
+import Component from "./lessons/03-state"
 
 function App() {
   return (
     <main>
-      <Component name="peter" id={123}>
-        <p>some text</p>
-      </Component>
+      <Component></Component>
     </main>
   )
 }
