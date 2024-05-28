@@ -1,9 +1,11 @@
-import Component from "./lessons/01-return"
+import Component from "./lessons/02-props/"
 
 function App() {
   return (
     <main>
-      <Component />
+      <Component name="peter" id={123}>
+        <p>some text</p>
+      </Component>
     </main>
   )
 }

@@ -1,6 +1,6 @@
 /*
 
-* By default TypeScript infers JSX.Element.
+* By default TypeScript infers JSX.Element on the return type.
 
 */
 
