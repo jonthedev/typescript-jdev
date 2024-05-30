@@ -8,7 +8,7 @@
 
 */
 
-import Component from "./lessons/06-context"
+import Component from "./lessons/07-reducers"
 
 function App() {
   return (
