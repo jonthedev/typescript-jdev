@@ -8,7 +8,7 @@
 
 */
 
-import Component from "./lessons/07-reducers"
+import Component from "./lessons/08-fetch-data"
 
 function App() {
   return (
