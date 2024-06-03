@@ -8,7 +8,7 @@
 
 */
 
-import Component from "./lessons/09-rtk"
+import Component from "./lessons/10-tasks"
 
 function App() {
   return (
