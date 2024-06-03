@@ -8,7 +8,7 @@
 
 */
 
-import Component from "./lessons/08-fetch-data"
+import Component from "./lessons/09-rtk"
 
 function App() {
   return (
